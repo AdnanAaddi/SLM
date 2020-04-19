@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image_one_signin"
+    tools:context=".login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#797979"
+        android:id="@+id/et_lusername"
+        android:padding="15dp"
+        android:textColor="#292929"
+        android:textColorHint="#797979"
+        />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:layout_centerInParent="true"
+        android:id="@+id/et_lpassword"
+        android:layout_below="@+id/et_lusername"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:padding="15dp"
+        android:textColor="#292929"
+        android:backgroundTint="#797979"
+        android:textColorHint="#797979"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_lpassword"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="50dp"
+        android:text="Sign in"
+        android:id="@+id/signii"
+        android:textColor="#191919"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btn_llogin"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_lpassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:textSize="30dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/forword"
+        android:textColor="#090808"
+        android:text="login" />
+
+
+
+    <TextView
+        android:id="@+id/tex_lregister"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/signii"
+        android:layout_marginTop="70dp"
+        android:textColor="#FF6D00"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:text="New here? Create account" />
+
+
+</RelativeLayout>

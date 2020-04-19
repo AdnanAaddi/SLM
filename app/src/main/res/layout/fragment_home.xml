@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image_one_signup"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/livingroom"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/livingroom"
+        android:onClick="bedroom" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Living Room "
+        android:textColor="#0A0A0A"
+        android:textSize="20dp"
+        android:layout_below="@id/livingroom"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/cookfood"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/cookfood"
+        android:onClick="kitchen" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kitchen"
+        android:textColor="#0A0A0A"
+        android:textSize="20dp"
+        android:layout_below="@id/cookfood"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <ImageView
+        android:id="@+id/bathroom"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/cookfood"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bathroom"
+        android:onClick="washroom" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wash Room"
+        android:textColor="#0A0A0A"
+        android:textSize="20dp"
+        android:layout_below="@id/bathroom"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/tvloungh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/cookfood"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tv"
+        android:onClick="tvloungh" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TV Loungh"
+        android:textColor="#0A0A0A"
+        android:textSize="20dp"
+        android:layout_below="@id/tvloungh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"/>
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/cookfood"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"
+
+        android:layout_marginRight="3dp"
+        android:background="@drawable/car"
+        android:onClick="garage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Garage"
+        android:layout_centerInParent="true"
+        android:textColor="#0A0A0A"
+        android:textSize="20dp"
+        android:layout_below="@id/car"
+        android:layout_marginLeft="70dp"/>
+
+
+</RelativeLayout>

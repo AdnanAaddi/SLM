@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.slm">
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".login"    android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".loginthrough"         android:screenOrientation="portrait" />
+        <activity android:name=".signup"               android:screenOrientation="portrait"/>
+        <activity android:name=".SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".garage"   android:screenOrientation="portrait"/>
+        <activity android:name=".tvloungh" android:screenOrientation="portrait"/>
+        <activity android:name=".washroom" android:screenOrientation="portrait"/>
+        <activity android:name=".bedroom"  android:screenOrientation="portrait"/>
+        <activity android:name=".kitchen"  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
